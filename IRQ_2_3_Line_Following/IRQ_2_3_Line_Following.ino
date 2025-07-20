@@ -16,9 +16,9 @@ void track() {
     if (analog(0) > ref && analog(1) > ref) {
       Motor(50, 50, 1);
     } else if (analog(0) < ref && analog(1) > ref) {
-      Motor(50, 0, 1);
-    } else if (analog(0) > ref && analog(1) < ref) {
       Motor(0, 50, 1);
+    } else if (analog(0) > ref && analog(1) < ref) {
+      Motor(50, 0, 1);
     } else if (analog(0) < ref && analog(1) < ref) {
       Motor(20, 20, 300);
       Motor(0, 0, 10);
